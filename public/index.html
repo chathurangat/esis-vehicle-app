@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<div id="root">
+
+</div>
+
+
+<!--<script>-->
+<!--  function searchVehicle() {-->
+<!--    const searchInput = document.getElementById("searchInput").value.toUpperCase();-->
+<!--    const resultContainer = document.getElementById("result");-->
+<!--    const messageContainer = document.getElementById("message");-->
+
+<!--    messageContainer.innerHTML = "";-->
+
+<!--    // Show message if input is empty-->
+<!--    if (searchInput === "") {-->
+<!--      messageContainer.innerHTML = `<p>Please enter the vehicle number.</p>`;-->
+<!--      return;-->
+<!--    }-->
+
+<!--    // Get all vehicle cards-->
+<!--    const vehicleCards = document.querySelectorAll(".card-content");-->
+
+<!--    let found = false;-->
+<!--    vehicleCards.forEach(card => {-->
+<!--      const vehicleNumber = card.querySelector(".vehicleNumber").textContent.toUpperCase();-->
+<!--      if (vehicleNumber.includes(searchInput)) {-->
+<!--        card.style.display = "block";-->
+<!--        found = true;-->
+<!--      } else {-->
+<!--        card.style.display = "none";-->
+<!--      }-->
+<!--    });-->
+
+<!--    if (!found) {-->
+<!--      resultContainer.innerHTML = `<p class="noResult">No matching vehicles found.</p>`;-->
+<!--    }-->
+<!--  }-->
+<!--</script>-->
+
+</body>
+
 </html>
