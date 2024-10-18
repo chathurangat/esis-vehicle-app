@@ -8,8 +8,8 @@ const VehicleDetails = () => {
 
     useEffect(() => {
         // Make the API request
-        axios.get('http://localhost:8082/vehicles?vehicle-number=123')
-        // axios.get('http://esis-vehicle-service:8082/vehicles/1')
+        axios.get('http://217.76.63.83:8082/vehicles?vehicle-number=123')
+            // axios.get('http://esis-vehicle-service:8082/vehicles/1')
             .then((response) => {
                 setData(response.data); // Store the data
                 setLoading(false);      // Set loading to false
